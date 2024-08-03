@@ -1,6 +1,5 @@
 [build]
-  command = "next build && next export"
-  publish = "out"
+  publish = "/opt/build/repo/out"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
