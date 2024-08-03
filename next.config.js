@@ -5,4 +5,8 @@ module.exports = {
   images: {
     unoptimized: true,
   },
+  presets: ["next/babel"],
+  plugins: [
+    ["@babel/plugin-transform-modules-commonjs", { allowTopLevelThis: true }],
+  ],
 };
