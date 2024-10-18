@@ -1,7 +1,5 @@
 import { AiFillCopyrightCircle } from "react-icons/ai";
 import { MdMail } from "react-icons/md";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import Translation from "./translations/transCompo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,22 +13,16 @@ const Footer = () => {
           <span>{currentYear} All Rights Reserved.</span>
         </div>
         <div className="flex items-center">
-          <a
-            href="https://www.fiverr.com/codeworthy"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Made with ❤️ by <span className="font-bold"><Translation translationKey={'name'} /></span>
+          <a href="#" target="_blank" rel="noreferrer">
+            Made with ❤️ by{" "}
+            <span className="text-BlueViolet">Pratham Panchal</span>
           </a>
         </div>
         <div className="hidden md:flex items-center">
           <div className="mr-1 text-base">
             <MdMail />
           </div>
-          <div>
-            {" "}
-            <Translation translationKey={"email"} />{" "}
-          </div>
+          <div> prathampanchal1122@gmail.com</div>
         </div>
       </div>
     </div>
