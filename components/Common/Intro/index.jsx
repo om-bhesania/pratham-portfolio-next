@@ -1,19 +1,11 @@
-import Link from "next/link";
-import {
-  FaDownload,
-  FaFacebook,
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-} from "react-icons/fa";
+import Image from "next/image";
+import { FaDownload } from "react-icons/fa";
 import Contact from "./Contact";
 import Download from "./Download";
 import Languages from "./Languages";
 import Location from "./Location";
-import Tools from "./Tools";
 import Skills from "./Skills";
-import Image from "next/image"; 
-import Translation from "./../../translations/transCompo";
+import Tools from "./Tools";
 
 const Intro = () => {
   return (
@@ -27,14 +19,7 @@ const Intro = () => {
           width={150}
           height={150}
         />
-        <div className="flex flex-col items-center justify-center">
-          <span className="text-gray-300 text-base font-bold break-normal">
-            <Translation translationKey={"name"} />
-          </span>
-          <span className="text-sm text-LightGray text-center mt-2">
-            <Translation translationKey={"designation"} />
-          </span>
-        </div>
+         
       </div>
 
       {/* middle components */}

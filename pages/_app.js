@@ -1,19 +1,16 @@
-import { TranslationProvider } from '../components/translations/transProvider'
-import '../styles/globals.css'
+import "../styles/globals.css";
 
-import Layout from './layout'
-import { QueryClient, QueryClientProvider } from 'react-query'
+import { QueryClient, QueryClientProvider } from "react-query";
+import Layout from "./layout";
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient();
 
 export default function App({ Component, pageProps }) {
   return (
     <QueryClientProvider client={queryClient}>
-      <TranslationProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </TranslationProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </QueryClientProvider>
-  )
+  );
 }

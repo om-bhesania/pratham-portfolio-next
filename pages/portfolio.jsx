@@ -1,11 +1,9 @@
-import { useState } from "react";
+import axios from "axios";
 import { useQuery } from "react-query";
 import BannerLayout from "../components/Common/BannerLayout";
+import ImageAndParagraphSkeleton from "../components/Common/ImageAndParagraphSkeleton";
 import Footer from "../components/Footer";
 import PortfolioCard from "../components/Portfolio/PortfolioCard";
-import axios from "axios";
-import { Skeleton } from "antd";
-import ImageAndParagraphSkeleton from "../components/Common/ImageAndParagraphSkeleton";
 
 const Portfolio = () => {
   const { isLoading, error, data } = useQuery("portfolio", () =>
